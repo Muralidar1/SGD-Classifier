@@ -14,12 +14,12 @@ To write a program to predict the type of species of the Iris flower using the S
 5.Generate Confusion Matrix 
 
 ## Program:
-```
+```python
 Program to implement the prediction of iris species using SGD Classifier.
 Developed by: Muralidar.P
 RegisterNumber:  212224040207
 ```
-```
+```python
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.linear_model import SGDClassifier
@@ -34,7 +34,7 @@ print(df.head())
 
 ```
 
-```
+```python
 x=df.drop('target',axis=1)
 y=df['target']
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42)
